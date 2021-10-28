@@ -1,6 +1,5 @@
 from pushbullet import Pushbullet
-import os
-import requests
+import requests, os
 from datetime import datetime
 
 
@@ -23,8 +22,5 @@ pushes = pb.get_pushes(limit=1)
 
 for push in pushes:
     print(push, '\n')
-    #print(push['url'], '\n')
-#print(pb.devices)
-
-
-
+    print(push['url'], '\n')
+print(pb.devices)
